@@ -43,4 +43,6 @@ Submit a link to your forked repository with your application contents. Make sur
 
 **Happy Coding**
 
-[Title](demo.mov)
+# Demo
+
+[Demo Video](demo.mov)
