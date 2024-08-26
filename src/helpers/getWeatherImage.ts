@@ -329,7 +329,10 @@ const items: Record<WeatherCode, WeatherImage> = {
  * @returns A "day" image representation of the WMO weather code
  */
 function getWeatherImage(weatherCode: WeatherCode) {
-  // Write implementation for this function to return the "day" image for a given weather code.
+  const weatherItem = items[weatherCode];
+  return weatherItem
+    ? weatherItem.day.image
+    : 'https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png';
 }
 
 export default getWeatherImage;

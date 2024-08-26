@@ -35,3 +35,9 @@ test.each([
     expect(getWeatherImage(weatherCode)).toEqual(image);
   },
 );
+
+test('should return a default image for an unknown weather code', () => {
+  expect(getWeatherImage('unknown')).toEqual(
+    'https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png',
+  );
+});
